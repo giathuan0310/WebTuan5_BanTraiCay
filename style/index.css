@@ -28,3 +28,56 @@
     height: 32px;
     border-radius: 5px;
 }
+
+
+/* Phan Body */
+
+.textmenu {
+    display: flex;
+    margin-top: 75px;
+    padding-left: 120px;
+}
+
+.contentbody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenbody-2 {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    margin-right: 223px;
+    align-items: center;
+}
+
+
+/* khung hinh */
+
+.box-img {
+    display: flex;
+    padding-left: 120px;
+    width: 2000px
+}
+
+.phagragap {
+    display: flex;
+    width: 782px;
+    padding-left: 120px;
+}
+
+.texticon-left {
+    display: flex;
+}
+
+.texticon-right {
+    display: flex;
+    width: 100px;
+}
+
+.texticon {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
