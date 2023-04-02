@@ -1,83 +1,185 @@
-.heading {
+.heading{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
 
-.heading-left {
-    justify-content: space-around;
+}
+.headingleft{
     display: flex;
+    justify-content: space-around;
+    width: 600px;
+    align-items: center;
+}
+.headingright{
+    display: flex;
+    justify-content: space-around;
+    
     align-items: center;
     width: 600px;
 }
-
-.heading-right {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 600px;
+.left{
+   position: relative;
+   width: 90px;
+   height: 40px;
 }
-
-.contentinput {
-    background: #f8e8e8;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    width: 332px;
-    height: 32px;
-    border-radius: 5px;
+.left:hover{
+    color: blue;
 }
-
-
-/* Phan Body */
-
-.textmenu {
-    display: flex;
-    margin-top: 75px;
-    padding-left: 120px;
+.left:hover::after{
+    left: 0px;
+    background-color: blue;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    height: 7px;
+    position: absolute;
 }
-
-.contentbody {
+/* Menu */
+.menu{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding-left: 130px;
+    padding-top: 45px;
 }
-
-.contenbody-2 {
-    display: flex;
-    justify-content: space-around;
-    width: 150px;
-    margin-right: 223px;
-    align-items: center;
-}
-
-
-/* khung hinh */
-
-.box-img {
-    display: flex;
-    padding-left: 120px;
-    width: 2000px
-}
-
-.phagragap {
-    display: flex;
-    width: 782px;
-    padding-left: 120px;
-}
-
-.texticon-left {
-    display: flex;
-}
-
-.texticon-right {
-    display: flex;
-    width: 100px;
-}
-
-.texticon {
+.leftsao{
     display: flex;
     justify-content: space-around;
     width: 200px;
+    padding-left: 130px;
+}
+.rightsao{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    padding-right:  30px;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header menu  right ' 'header main footer';
+    gap: 1px;
+    
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+}
+
+.text{
+    display: flex;
+   
+
+}
+.icon{
+    display: flex;
+    
+}
+.textleft{
+    width: 600px;
+    padding-left: 120px;
+    
+}
+.textright{
+    padding-left: 650px;
+    width: 50px;
+    
+}
+.button{
+    width: 298px;
+    margin-left: -257px;
+    text-align: start; 
+    margin-top: 15px;
+    border-radius: 5px;
+    
+}
+.total{
+    display: flex;
+    margin-left: -252px;
+   
+}
+.avatar{
+    display: flex;
+   
+    justify-content: space-between;
+    padding-left: 124px;
+    width: 1080px;
+}
+
+.avatarleft{
+    display: flex;
+}
+
+.avatar2{
+    display: flex;
+   
+    justify-content: space-between;
+    padding-left: 124px;
+    width: 1080px;
+}
+.avatarleft2{
+    display: flex;
+}
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    width: 1080px;
+    padding-left: 109px;
+}
+.listsp{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    width: 1189px;
+    padding-left: 109px;
+   
+}
+.bootominput{
+    text-align: center;
+}
+.listfooter{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    width: 809px;
+    padding-left: 265px;
+    padding-top: 40px;
+}
+
+
+.listend{
+    display: flex;
+    width: 355px;
+    justify-content: space-around;
+    padding-left: 451px;
+    padding-top: 40px;
+
+
+}
+
+.listnone{
+    list-style: none;
 }
